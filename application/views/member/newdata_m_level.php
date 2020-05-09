@@ -1,0 +1,44 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            จัดการ Level
+           
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="<?php echo  site_url('member/m_level/newdata_m_level'); ?>"><i class="fa fa-dashboard"></i> หน้าแรก</a></li>
+            <li><a href="<?php echo  site_url('member/m_level/newdata_m_level'); ?>">จัดการ Level</a></li>
+            <li class="active">เพิ่มข้อมูลใหม่</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+        <!-- Your Page Content Here -->
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">NEW DATA</h3>
+            </div><!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" action="<?php echo  site_url('member/m_level_adding'); ?>" method="post" class="form-horizontal">
+                <div class="box-body">
+                    <div class="form-group">
+                        <div class="col-sm-4">
+                        <label for="exampleInputEmail1">ชื่อ Level</label> 
+                        <input type="text" id="level_name" class="form-control" name="level_name" required>
+                    </div>
+                    </div>
+                </div><!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-fw fa-save"></i> บันทึกข้อมูล</button>
+                    <a class="btn btn-danger" href="<?php echo  site_url('member/m_level'); ?>" role="button"><i class="fa fa-fw fa-close"></i> ยกเลิก</a>
+                </div>
+            </form>
+        </div>
+        </div> </div> </div> 
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
